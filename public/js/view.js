@@ -81,18 +81,17 @@ $(document).ready(function() {
 
     function createNewRow(item) {
         let newInputItem = $(
-            [
-              "<li class='list-group-item item-item'>",
-              "<span>",
-              item.text,
-              "</span>",
-              "<input type='text' class='edit' style='display: none;'>",
-              "<button class='delete btn btn-danger'>x</button>",
-              "<button class='complete btn btn-primary'>✓</button>",
-              "</li>"
-            ].join("")
+                [
+                "<li class='list-group-item item-item'>",
+                "<span>",
+                item.text ,
+                "</span>" + "<br>",
+                "<input type='text' class='edit' style='display: none;'>",
+                "<button class='delete btn btn-danger'>x</button>",
+                "<button class='complete btn btn-primary'>✓</button>",
+                "</li>"
+                ].join("")
           );
-      
           newInputItem.find("button.delete").data("id", item.id);
           newInputItem.find("input.edit").css("display", "none");
           newInputItem.data("item", item);
@@ -114,3 +113,16 @@ $(document).ready(function() {
         console.log(newItem)
     }
 });
+
+// let newInputItem = $(
+//     [
+//     "<li class='list-group-item item-item'>",
+//     "<span>",
+//     item.text ,
+//     "</span>",
+//     "<input type='text' class='edit' style='display: none;'>",
+//     "<button class='delete btn btn-danger'>x</button>",
+//     "<button class='complete btn btn-primary'>✓</button>",
+//     "</li>"
+//     ].join("     ")
+// );

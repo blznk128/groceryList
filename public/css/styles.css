@@ -3,6 +3,17 @@ h1 {
     font-size: 60px;
 }
 
+h2 {
+    text-align: center
+}
 .list-group {
     margin-top: 75px
+}
+
+span {
+    font-size: 25px
+}
+
+body {
+    background: url(https://cdn5.vectorstock.com/i/1000x1000/24/74/seamless-alphabet-letters-background-vector-4462474.jpg)
 }
